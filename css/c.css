@@ -6,7 +6,7 @@ body {
     padding: 0px;
     margin: 0px;
     font: 14px sans-serif;
-    background-color: #EAEAEA;
+    background-color: #ffcc00;
 }
 
 a {
@@ -16,17 +16,6 @@ a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-
-.header {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    height: 44px;
-    background: #109adc;
-    color: #FFFFFF;
-    border-bottom: 1px solid #0E5895;;
-}
 
 .header h1 {
     font-size: 20px;
@@ -44,11 +33,6 @@ a {
     background-color: #0984c6;
     border: 1px solid #0e5895;
     border-radius: 2px;
-}
-
-.header a:active {
-    color: #fff;
-    background-color: #0876b1;
 }
 
 .page .scroller {
@@ -95,3 +79,9 @@ a {
 .robot > p {
     clear: both;
 }
+
+.psPage { position: absolute; top: 0; left: 0; width: 100%; height: 100%; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+.psPage.left { -webkit-transform: translate3d(-100%, 0, 0); transform: translate3d(-100%, 0, 0); }
+.psPage.center { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+.psPage.right { -webkit-transform: translate3d(100%, 0, 0); transform: translate3d(100%, 0, 0); }
+.psPage.transition { -webkit-transition-duration: .25s; transition-duration: .25s; }
